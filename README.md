@@ -1,5 +1,7 @@
 # Qofeno Skills
 
+[![skills.sh](https://skills.sh/b/SohailKhan0525/skills)](https://skills.sh/SohailKhan0525/skills)
+
 A collection of agent skills by Qofeno — reusable, real-world workflows for AI coding agents (Claude Code, Cursor, Antigravity, Codex, and more), following the open [Agent Skills](https://www.skills.sh) format.
 
 ## Install a skill

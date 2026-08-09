@@ -1,6 +1,6 @@
 # Qofeno Skills
 
-[![skills.sh](https://skills.sh/b/SohailKhan0525/skills)](https://skills.sh/SohailKhan0525/skills)
+<a href="https://skills.sh/SohailKhan0525/skills"><img src="https://skills.sh/b/SohailKhan0525/skills" alt="skills.sh" /></a>
 
 A collection of agent skills by Qofeno — reusable, real-world workflows for AI coding agents (Claude Code, Cursor, Antigravity, Codex, and more), following the open [Agent Skills](https://www.skills.sh) format.
 
@@ -16,7 +16,7 @@ Or install a specific skill from this repo once packs/scoped installs are set up
 
 | Skill | Description |
 |---|---|
-| [`backend-setup-wizard`](./skills/backend-setup-wizard) | Provisions and configures real, live backends and third-party services (databases, auth, payments, etc.) entirely via CLI — collects live API credentials safely into `.env`, never test keys or placeholders, and always pulls current official docs before setting anything up. |
+| [`backend-setup-wizard`](./skills/backend-setup-wizard) | Provisions, configures, and deploys real, live backends and third-party services (databases, auth, payments, etc.) entirely via CLI — collects live API credentials safely into `.env`, pushes them into the deployment platform's own secret store, and gets the backend actually live in production. Never test keys, never placeholders, never stub code — if a required credential is missing, it stops and asks rather than faking anything. Always pulls current official docs before setting anything up. |
 
 More skills coming soon.
 

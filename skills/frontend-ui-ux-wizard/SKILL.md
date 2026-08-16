@@ -67,6 +67,9 @@ Store these as an actual file the code imports/references (`tailwind.config`, CS
 ## Step 4 — Build the real thing
 
 - Write actual production code in the chosen framework — real components, real responsive layouts, not a single hardcoded desktop-only view.
+- **Optional component library**: for animated/interactive visual flourishes (text effects, backgrounds, cards, navigation, cursor interactions, galleries), check `references/component-library/index.md` first for a real, working component before building one from scratch. This is optional, not mandatory — only reach for it when a component actually fits what the project needs, and skip it entirely if nothing there fits or the user wants something custom.
+  - Search the index by name, then open only the matching category file (`text-effects.md`, `backgrounds.md`, `cards.md`, `navigation.md`, `cursors-interactions.md`, `galleries-carousels.md`, `sections-misc.md`) — don't load every file into context at once.
+  - **Always restyle to match this project's actual design tokens from Step 2** (colors, spacing, type scale) rather than dropping it in with its default styling unchanged — a library component reused identically across every project is exactly the templated sameness this skill avoids. Adapt it; don't just paste it.
 - **Accessibility**: semantic HTML, sufficient color contrast, visible focus states, keyboard navigability, alt text on real images.
 - **Performance**: optimize/lazy-load images, avoid shipping unnecessary JS for static content.
 - **SEO**: real title/meta description per page, Open Graph tags and preview image, not a generic default left unfilled.

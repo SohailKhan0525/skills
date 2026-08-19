@@ -23,6 +23,8 @@ Or install one skill at a time:
 npx skills add SohailKhan0525/skills --skill backend-setup-wizard
 ```
 
+Want the agent to check *every* installed skill — from any source — before starting any request, not just when a prompt obviously matches? See [ALWAYS-ON-SETUP.md](./ALWAYS-ON-SETUP.md).
+
 ## Skills in this repo
 
 | Skill | Status | What it does |
@@ -30,6 +32,7 @@ npx skills add SohailKhan0525/skills --skill backend-setup-wizard
 | [`backend-setup-wizard`](./skills/backend-setup-wizard) | ✅ Stable | Provisions, configures, and deploys real, live backends and third-party services (databases, auth, payments, etc.) entirely via CLI. Zero-knowledge credential handling — the agent never sees, types, or reads the raw key; auth happens via OAuth/CLI-login or the user's own terminal. Never test keys, never placeholders. |
 | [`security-hardening-wizard`](./skills/security-hardening-wizard) | ✅ Stable | Scans every file in a project — any extension, not just source code — for real vulnerabilities, fixes each one for real via CLI, hardens the live deployed backend/site, and produces a verified markdown audit report. Works standalone or as a follow-up to `backend-setup-wizard`. |
 | [`frontend-ui-ux-wizard`](./skills/frontend-ui-ux-wizard) | ✅ Stable | Designs and builds real, production-ready websites — full site scope (home, about, contact, pricing, real privacy/terms pages), a real design-token system, deliberate font pairing, real product screenshots via Playwright — then checks the build, pushes to GitHub, and deploys it live. |
+| [`skill-router`](./skills/skill-router) | ✅ Stable | Checks every installed skill — from any publisher, not just this repo — for relevance before starting substantive work, so a matching skill doesn't get silently skipped just because a request didn't use its exact trigger words. Pair with [ALWAYS-ON-SETUP.md](./ALWAYS-ON-SETUP.md) for the closest thing to guaranteed coverage. |
 
 **Status key:** ✅ Stable — used and working · 🧪 Beta — functional, still being refined · 📝 Planned — not built yet
 
@@ -53,6 +56,8 @@ skills/
 ├── security-hardening-wizard/
 │   └── SKILL.md
 ├── frontend-ui-ux-wizard/
+│   └── SKILL.md
+├── skill-router/
 │   └── SKILL.md
 └── <next-skill>/
     └── SKILL.md
